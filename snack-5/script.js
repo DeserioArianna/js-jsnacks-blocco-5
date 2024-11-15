@@ -15,4 +15,4 @@ const numbersEven3 = [];
 nums.forEach((number) => {
     (number % 2 === 0) ? numbersEven3.push(number) : null; 
 });
-console.log(numbersEven3)
+console.log(numbersEven3);
