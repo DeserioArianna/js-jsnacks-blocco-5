@@ -22,9 +22,11 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
+// prima scelta
 const student = students.find((student) => student.name === "Marco Lanci");
 console.log(student.class);
 
+// seconda scelta
 students.forEach((student) => (student.name === "Marco Lanci") ? console.log(student.class) : null);
 
 // filter restituisce un array non é in questo caso la scelta migliore
