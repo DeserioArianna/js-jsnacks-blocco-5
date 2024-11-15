@@ -21,3 +21,15 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+const student = students.find((student) => student.name === "Marco Lanci");
+console.log(student.class);
+
+const student2 = students.filter((student) => student.name === "Marco Lanci");
+console.log(student.class);
+
+const student3 = students.map((student) => {
+  (student.name === "Marco Lanci") ? console.log(student.class) : null;
+});
+
+students.forEach((student) => (student.name === "Marco Lanci") ? console.log(student.class) : null)
