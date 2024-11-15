@@ -26,10 +26,10 @@ const student = students.find((student) => student.name === "Marco Lanci");
 console.log(student.class);
 
 const student2 = students.filter((student) => student.name === "Marco Lanci");
-console.log(student.class);
+console.log(student2[0].class);
 
 const student3 = students.map((student) => {
   (student.name === "Marco Lanci") ? console.log(student.class) : null;
 });
 
-students.forEach((student) => (student.name === "Marco Lanci") ? console.log(student.class) : null)
+students.forEach((student) => (student.name === "Marco Lanci") ? console.log(student.class) : null);
